@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+       <source media="(max-width:  1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="imagem flexível">
+    </picture>
+    <p>Adapte as imagens em vários tamanhos diferentes para uma melhor experiência
+        do usuário com o site. Assim, o usuário usurá mais seu site. Max-width = largura.
+    </p>
+    <h1>Reproduzindo áudios</h1>
+    <p>vamos aprender a reproduzir áudios em html.</p>
+    <audio preload="metadata"  autoplay controls loop>
+        <source src="midia/audd-lang.mp3" type="audio/mpeg">
+        <source src="midia/audd-lang.mp3" type="audio/ogg">
+        <source src="midia/audd-lang.mp3" type="audio/wav">
+        <p>Se não abrir nenhum desses, infelizmente seu computador não consegue
+            reproduzir áudios. <a href="midia/audd-lang.mp3">Clique aqui para baixar mp3</a>
+        </p>
+    </audio>
+ 
+    
+</body>
+</html>
